@@ -1,4 +1,4 @@
-FROM golang:1.18.3 as builder
+FROM golang:1.19.5 as builder
 ARG TARGETARCH
 ARG BIN_DIR=.build/linux-${TARGETARCH}/
 
