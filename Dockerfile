@@ -13,7 +13,7 @@ COPY --from=builder /bin/kafka_exporter /bin/kafka_exporter
 EXPOSE     9308
 ENTRYPOINT [ "/bin/kafka_exporter" ]
 
-FROM quay.io/sysdig/sysdig-mini-ubi:1.4.11 as ubi
+FROM quay.io/sysdig/sysdig-mini-ubi:1.5.2 as ubi
 COPY --from=builder /bin/kafka_exporter /bin/kafka_exporter
 EXPOSE     9308
 ENTRYPOINT [ "/bin/kafka_exporter" ]
